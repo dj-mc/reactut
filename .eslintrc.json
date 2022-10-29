@@ -1,0 +1,45 @@
+{
+  "env": {
+    "es6": true,
+    "browser": true
+  },
+  "extends": [
+    "plugin:react/jsx-runtime",
+    "plugin:react/recommended",
+    "prettier"
+  ],
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest"
+  },
+  "plugins": ["react"],
+  "rules": {
+    "react/prop-types": 0,
+    "react/react-in-jsx-scope": 0,
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
+    "no-undef": 2,
+    "no-unused-vars": 2,
+    "no-use-before-define": 2,
+    "no-sequences": "off",
+    "no-var": "off",
+    "semi": ["error", "always"],
+    "max-len": [
+      "warn",
+      {
+        "code": 100,
+        "comments": 80
+      }
+    ]
+  },
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "fragment": "Fragment",
+      "version": "detect"
+    }
+  }
+}
